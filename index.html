@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagran feed Bootstrap</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<!--navbar-->
+<main class="container">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram p-1 m-1"></i>Instagram </a>
+      <div class="float-end">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new Post
+        </button>
+
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-md dropdown-toggle " type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item fw-bold" href="#">Profile</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Privaci and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger fw-bold" href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+
+        </div>
+        <div class="modal-body">
+          <h6>Caption:</h6>
+          <textarea class="form-control p-1 m-1" placeholder="Add th caption of your post here"
+            id="floatingTextarea"></textarea>
+
+          <button class="col-1 border rounded p-1 m-1 btn-light"><i class="fa-solid fa-camera"></i></i></button>
+
+          <button class="col-1 border rounded p-1 m-1 btn-light"><i class="fa-solid fa-location-dot"></i></button>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--iconos centrales-->
+  <div class="nav justify-content-center p-2">
+    <ul class="nav nav-tabs" id="mytab" role="tablist">
+      <li class="nav-item">
+
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+
+        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+          aria-controls="home-tab-pane" aria-selected="true">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!--grid-->
+  <div class="tab-content" id="mytab">
+    <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+
+          <div class="col ">
+            <img src="/assets/img/10.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/2.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/3.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+
+          <div class="col">
+            <img src="/assets/img/1.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/5.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/6.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+
+          <div class="col">
+            <img src="/assets/img/7.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/8.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+          <div class="col">
+            <img src="/assets/img/9.jpg" class="img-thumbnail width:100% height:auto" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--1 columna-->
+    <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+      <div class="col-8 d-flex justify-content-center container-fluid ">
+        <div class="card card-body p-0">
+
+
+          <div class="d-flex justify-content-between p-3">
+            <h5 class="card-title">Specialized S-works</h5>
+            <small>02/10</small>
+          </div>
+
+          <img style=" width:100% " src="/assets/img/S-works azul.jpg" alt="">
+
+          <div class="p-3">
+            <h5>350 Likes</h5>
+            <p>Specialized es una marca estadounidense de bicicletas de alta gama, conocida por su innovación y calidad.
+              Fundada en 1974, ofrece modelos destacados como la Tarmac y la Stumpjumper, utilizadas en competiciones de
+              ciclismo de carretera y montaña.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8 d-flex justify-content-center container-fluid p-3">
+        <div class="card card-body p-0">
+
+
+          <div class="d-flex justify-content-between p-3">
+            <h5 class="card-title">Pinarello</h5>
+            <small>08/10</small>
+          </div>
+
+          <img style=" width:100% " src="/assets/img/pinarello.jpg" alt="">
+
+          <div class="p-3">
+            <h5>300 Likes</h5>
+            <p>Pinarello es una marca italiana de bicicletas de alta gama, famosa por sus innovadores diseños y su uso
+              de
+              materiales como la fibra de carbono. Fundada en 1952, sus modelos como la Dogma son muy apreciados en el
+              ciclismo profesional y han ganado múltiples títulos en el Tour de Francia.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-8 d-flex justify-content-center container-fluid p-3">
+        <div class="card card-body p-0">
+
+
+          <div class="d-flex justify-content-between p-3">
+            <h5 class="card-title">Canyon</h5>
+            <small>06/10</small>
+          </div>
+
+          <img style=" width:100% " src="/assets/img/canyon.jpg" alt="">
+
+          <div class="p-3">
+            <h5>550 Likes</h5>
+            <p>Canyon es una marca alemana de bicicletas de alta gama, reconocida por su diseño directo al consumidor y
+              su
+              innovación tecnológica. Fundada en 2002, ofrece modelos populares como la Ultimate y la Strive, utilizados
+              tanto en ciclismo de carretera como de montaña.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
